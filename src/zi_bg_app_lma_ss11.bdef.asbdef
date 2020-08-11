@@ -8,21 +8,5 @@ lock master
   update;
   delete;
 
-  // validations
   validation validateCity on save { field City; }
-
-//  mapping for zbg_app_lma_ss11
-//  {
-//    name = name;
-//    city = city;
-//    photo = photo;
-//    description = description;
-//  }
-
-//  mapping for zbg_app_cit_ss11
-// {
-//    city = name;
-//    dist_from_sof = dist_from_sof;
-//    region = region;
-//  }
 }
