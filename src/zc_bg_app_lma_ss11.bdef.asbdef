@@ -1,0 +1,8 @@
+projection;
+
+define behavior for ZC_BG_APP_LMA_SS11 alias Landmark
+{
+  use create;
+  use update;
+  use delete;
+}

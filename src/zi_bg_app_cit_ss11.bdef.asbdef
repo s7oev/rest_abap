@@ -1,0 +1,10 @@
+managed; // implementation in class zbp_i_bg_app_cit_ss11 unique;
+
+define behavior for ZI_BG_APP_CIT_SS11 alias City
+persistent table ZBG_APP_CIT_SS11
+lock master
+{
+  create;
+  update;
+  delete;
+}

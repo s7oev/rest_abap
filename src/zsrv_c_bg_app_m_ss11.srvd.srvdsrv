@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service definition for Landmark'
+define service ZSRV_C_BG_APP_M_SS11 {
+  expose ZC_BG_APP_LMA_SS11 as Landmark;
+  expose ZC_BG_APP_CIT_SS11 as City;
+}

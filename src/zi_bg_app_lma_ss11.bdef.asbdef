@@ -1,0 +1,28 @@
+managed implementation in class zbp_i_bg_app_lma_ss11 unique;
+
+define behavior for ZI_BG_APP_LMA_SS11 alias Landmark
+persistent table ZBG_APP_LMA_SS11
+lock master
+{
+  create;
+  update;
+  delete;
+
+  // validations
+  validation validateCity on save { field City; }
+
+//  mapping for zbg_app_lma_ss11
+//  {
+//    name = name;
+//    city = city;
+//    photo = photo;
+//    description = description;
+//  }
+
+//  mapping for zbg_app_cit_ss11
+// {
+//    city = name;
+//    dist_from_sof = dist_from_sof;
+//    region = region;
+//  }
+}
