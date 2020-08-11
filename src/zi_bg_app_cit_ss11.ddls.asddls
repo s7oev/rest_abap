@@ -4,11 +4,11 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Data model for City'
 define root view ZI_BG_APP_CIT_SS11 as select from zbg_app_cit_ss11 as City
-  association [0..*] to ZI_BG_APP_LMA_SS11 as _Landmarks on $projection.Name = _Landmarks.City
+  association [0..*] to ZI_BG_APP_LMA_SS11 as _Landmarks on $projection.name = _Landmarks.City
 {
-    key name as Name,
-    region as Region,
-    dist_from_sof as dist_from_sof,
+    key name,
+    region,
+    dist_from_sof,
     
     _Landmarks
 }
